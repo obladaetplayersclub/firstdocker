@@ -1,0 +1,30 @@
+name: Docker work
+
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-test-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.FIRST_DOCKER_PROJECT }}
+          password: ${{ secrets.FIRST_DOCKER_PROJECT_PASSWORD }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          push: true
+          tags: kostyaokriashvili/kostasfirstdocker:latest
