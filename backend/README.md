@@ -1,13 +1,15 @@
-#МОЙ DOCKER-ПРОЕКТ
+МОЙ DOCKER-ПРОЕКТ
 
-Я использовал имя my-django-app, можно, конечно же, заменить на свое (как и в случае с my_container)
+Я использовал имя kostas-app, можно, конечно же, заменить на свое (как и в случае с my_container)
 
 Как запаустить DOCKER
 =====================
+Чтобы начать сборку, я использовал Терминал. Ввел команду cd + путь до папки в которой лежал Dockerfile.
+Далее следуем инструкции:
 1. **Собрать образ:**
-    docker build -t my-django-app .
+    docker build -t kostas-app .
 2. **Запустить:**
-    docker run -d -p 8000:8000 --name my_container my-django-app
+    docker run -d -p 8000:8000 --name my_container kostas-app
 
 
 #### Contact me:
