@@ -10,6 +10,5 @@
     docker run -d -p 8000:8000 --name my_container my-django-app
 
 
-
 #### Contact me:
 [![Telegram](https://img.shields.io/badge/Telegram-262424?style=for-the-badge&logo=Telegram)](https://t.me/ffraud)
