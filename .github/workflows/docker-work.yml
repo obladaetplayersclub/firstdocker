@@ -3,9 +3,9 @@ name: Docker work
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "Main", "My_work" ]
   pull_request:
-    branches: ["main"]
+    branches: ["Main", "My_work"]
 
 jobs:
   build-test-publish:
