@@ -10,7 +10,7 @@ COPY api/ ./api/
 
 COPY backend/ ./backend/
 
-COPY manage.py .
+COPY backend/manage.py .
 
 EXPOSE 8000
 
