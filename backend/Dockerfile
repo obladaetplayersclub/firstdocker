@@ -1,16 +1,13 @@
 FROM python:3.10-slim
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/backend
 
 COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY api/ ./api/
-
 COPY backend/ ./backend/
 
-COPY backend/manage.py .
 
 EXPOSE 8000
 
