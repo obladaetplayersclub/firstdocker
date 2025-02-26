@@ -11,6 +11,9 @@ jobs:
   build-test-publish:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+        
       - name: Python
         uses: actions/setup-python@v4
         with:
