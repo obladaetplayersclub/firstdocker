@@ -11,6 +11,15 @@
 2. **Запустить:**
     docker run -d -p 8000:8000 --name net. kostas-app
 
+Как работает CI/CD pipeline?
+=====================
+Инструкция:
+1. **Создать какие-либо мзенения**
+    Добавляем изменения в проект, создаем коммит
+2. **Пуш**
+    Пушим эти изменения и следим за выполнением "джобы"
+3. **Docker Hub**
+    Если джобы выполнены, то заходим на Docker Hub и смотрим, выполнилась ли задача или нет
 
 #### Contact me:
 [![Telegram](https://img.shields.io/badge/Telegram-262424?style=for-the-badge&logo=Telegram)](https://t.me/ffraud)

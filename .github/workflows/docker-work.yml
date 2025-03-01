@@ -11,9 +11,9 @@ jobs:
   build-test-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the repository
+      - name: Проверка репозитория
         uses: actions/checkout@v3
-
+    
       - name: Python
         uses: actions/setup-python@v4
         with:
@@ -25,7 +25,7 @@ jobs:
           username: ${{ secrets.FIRST_DOCKER_PROJECT }}
           password: ${{ secrets.FIRST_DOCKER_PROJECT_PASSWORD }}
 
-      - name: Build and push
+      - name: Сборка и пуш
         uses: docker/build-push-action@v3
         with:
           context: .
